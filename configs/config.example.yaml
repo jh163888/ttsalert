@@ -1,0 +1,32 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+
+tts:
+  use_edgetts: true
+  voice: "zh-CN-XiaoxiaoNeural"
+  rate: "+0%"
+  volume: "+0%"
+  pitch: "+0Hz"
+  output_dir: "/var/lib/ttsalert/audio"
+  audio_format: "mp3"
+
+sip:
+  server: "sip.example.com"
+  port: 5060
+  local_port: 5060
+  username: "alert_user"
+  password: "your_password"
+  domain: "example.com"
+  from_user: "alert_user"
+  max_call_duration: 120s
+  ring_timeout: 30s
+  max_retries: 3
+  retry_delay: 5s
+
+queue:
+  size: 100
+  workers: 3
+
+logging:
+  level: "info"
