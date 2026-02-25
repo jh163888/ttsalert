@@ -41,14 +41,20 @@ release: clean
 	
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build ${LDFLAGS} -o dist/${BINARY_NAME}_linux_amd64 ./cmd
 	tar -czf dist/${BINARY_NAME}_linux_amd64.tar.gz -C dist ${BINARY_NAME}_linux_amd64
+	rm dist/${BINARY_NAME}_linux_amd64
 	
 	CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build ${LDFLAGS} -o dist/${BINARY_NAME}_linux_arm64 ./cmd
 	tar -czf dist/${BINARY_NAME}_linux_arm64.tar.gz -C dist ${BINARY_NAME}_linux_arm64
+	rm dist/${BINARY_NAME}_linux_arm64
 	
 	CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build ${LDFLAGS} -o dist/${BINARY_NAME}_windows_amd64.exe ./cmd
 	zip -j dist/${BINARY_NAME}_windows_amd64.zip dist/${BINARY_NAME}_windows_amd64.exe
+	rm dist/${BINARY_NAME}_windows_amd64.exe
+	
+	sha256sum dist/* > dist/checksums.txt
 	
 	@echo "Release builds created in dist/"
+	@echo "Upload to: https://github.com/jh163888/ttsalert/releases"
 
 test:
 	@echo "Running tests..."

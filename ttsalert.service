@@ -1,6 +1,6 @@
 [Unit]
 Description=TTS Alert Service - Voice Alert System
-Documentation=https://github.com/ttsalert/ttsalert
+Documentation=https://github.com/jh163888/ttsalert
 After=network.target network-online.target
 Wants=network-online.target
 

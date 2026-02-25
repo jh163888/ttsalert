@@ -102,9 +102,9 @@ install_binary() {
     esac
     
     if [[ "$VERSION" == "latest" ]]; then
-        URL="https://github.com/ttsalert/ttsalert/releases/latest/download/ttsalert_linux_${ARCH}.tar.gz"
+        URL="https://github.com/jh163888/ttsalert/releases/latest/download/ttsalert_linux_${ARCH}.tar.gz"
     else
-        URL="https://github.com/ttsalert/ttsalert/releases/download/${VERSION}/ttsalert_linux_${ARCH}.tar.gz"
+        URL="https://github.com/jh163888/ttsalert/releases/download/${VERSION}/ttsalert_linux_${ARCH}.tar.gz"
     fi
     
     log_info "Downloading from: $URL"
@@ -259,6 +259,7 @@ show_status() {
 main() {
     echo "========================================"
     echo "  TTS Alert Installer"
+    echo "  GitHub: github.com/jh163888/ttsalert"
     echo "========================================"
     echo ""
     

@@ -5,13 +5,13 @@
 一键安装脚本（需要 root 权限）:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ttsalert/ttsalert/main/scripts/install.sh | bash -
+curl -fsSL https://raw.githubusercontent.com/jh163888/ttsalert/main/scripts/install.sh | bash -
 ```
 
 或下载后执行:
 
 ```bash
-wget https://raw.githubusercontent.com/ttsalert/ttsalert/main/scripts/install.sh
+wget https://raw.githubusercontent.com/jh163888/ttsalert/main/scripts/install.sh
 chmod +x install.sh
 sudo ./install.sh
 ```
@@ -53,7 +53,7 @@ sudo chown -R ttsalert:ttsalert /var/lib/ttsalert
 
 从 Release 页面下载:
 ```bash
-wget https://github.com/ttsalert/ttsalert/releases/latest/download/ttsalert_linux_amd64.tar.gz
+wget https://github.com/jh163888/ttsalert/releases/latest/download/ttsalert_linux_amd64.tar.gz
 tar -xzf ttsalert_linux_amd64.tar.gz
 sudo mv ttsalert /usr/local/bin/
 sudo chmod +x /usr/local/bin/ttsalert
@@ -61,7 +61,7 @@ sudo chmod +x /usr/local/bin/ttsalert
 
 或编译安装:
 ```bash
-git clone https://github.com/ttsalert/ttsalert.git
+git clone https://github.com/jh163888/ttsalert.git
 cd ttsalert
 make build
 sudo make install
@@ -139,7 +139,7 @@ sudo systemctl disable ttsalert
 ## 卸载
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ttsalert/ttsalert/main/scripts/uninstall.sh | bash -
+curl -fsSL https://raw.githubusercontent.com/jh163888/ttsalert/main/scripts/uninstall.sh | bash -
 ```
 
 或手动卸载:

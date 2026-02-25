@@ -1,4 +1,4 @@
-module github.com/ttsalert/ttsalert
+module github.com/jh163888/ttsalert
 
 go 1.21
 

@@ -1,6 +1,11 @@
 # TTS Alert - 语音告警系统
 
+[![GitHub Release](https://img.shields.io/github/v/release/jh163888/ttsalert)](https://github.com/jh163888/ttsalert/releases)
+[![License](https://img.shields.io/github/license/jh163888/ttsalert)](LICENSE)
+
 基于 EdgeTTS 和 SIP 的自动语音告警系统，支持 Zabbix 和卓豪 OPM 集成。
+
+> 项目地址：https://github.com/jh163888/ttsalert
 
 ## 功能特性
 
@@ -12,6 +17,14 @@
 - ✅ 多个电话号码轮询
 
 ## 快速开始
+
+### 一键安装 (推荐)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jh163888/ttsalert/main/scripts/install.sh | sudo bash -
+```
+
+### 手动安装
 
 ### 1. 安装依赖
 
@@ -186,3 +199,8 @@ ttsalert/
 ## License
 
 MIT
+
+## 链接
+
+- GitHub: https://github.com/jh163888/ttsalert
+- 问题反馈：https://github.com/jh163888/ttsalert/issues

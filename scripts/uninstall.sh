@@ -24,6 +24,7 @@ check_root() {
 main() {
     echo "========================================"
     echo "  TTS Alert Uninstaller"
+    echo "  GitHub: github.com/jh163888/ttsalert"
     echo "========================================"
     echo ""
     
