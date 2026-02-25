@@ -10,12 +10,12 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
+	"github.com/jh163888/ttsalert/internal/handler"
+	"github.com/jh163888/ttsalert/internal/queue"
+	"github.com/jh163888/ttsalert/internal/sip"
+	"github.com/jh163888/ttsalert/internal/tts"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"github.com/ttsalert/ttsalert/internal/handler"
-	"github.com/ttsalert/ttsalert/internal/queue"
-	"github.com/ttsalert/ttsalert/internal/sip"
-	"github.com/ttsalert/ttsalert/internal/tts"
 )
 
 type Config struct {
